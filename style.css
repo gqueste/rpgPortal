@@ -1,0 +1,75 @@
+h1 {
+    text-align: center
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: chocolate;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.tile {
+    height: 200px;
+    width: 300px;
+    margin: 10px 10px 10 10px;
+}
+
+.tile:hover .image {
+    filter: none;
+    box-shadow: -5px -5px 5px rgba(0,0,0,0.50);
+}
+
+.image {
+    border-radius: 15px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 150px;
+    width: 300px;
+    margin-bottom: 15px;
+    filter: grayscale(65%);
+    transition: filter 0.2s;
+    transition: box-shadow 0.2s;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: auto;
+    max-height: 150px;
+    max-width: 300px;
+}
+
+.tile:hover .caption {
+    font-weight: bold;
+}
+
+.caption {
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    transition: font-weight 0.2s;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 20px;
+}
